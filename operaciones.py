@@ -18,11 +18,12 @@ def multiplicacion(a, b):
 
 def division(a, b):
     """
-    Devuelve la división de dos números. Maneja de división entre cero
+    Devuelve la división de dos números.
     """
     try:
         resultado = a / b
     except ZeroDivisionError:
+        print("Operación de divición intentada.")
         return "Error: No se puede dividir entre cero"
     else:
         return resultado
